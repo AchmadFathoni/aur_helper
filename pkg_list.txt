@@ -5,6 +5,7 @@ input-veikk-config
 libdart
 mavproxy
 onboard-sdk
+python-pur
 python-colcon-argcomplete
 python-colcon-bash
 python-colcon-cd
