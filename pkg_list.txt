@@ -5,6 +5,7 @@ libdart
 mavproxy
 onboard-sdk
 python-pur
+python-zipline
 python-pandas-stubs
 python-colcon-argcomplete
 python-colcon-bash
