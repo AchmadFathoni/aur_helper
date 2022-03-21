@@ -1,0 +1,17 @@
+{
+    "scripts": {
+        "ignition-cmake": "curl -sL AchmadFathoni:$GITHUB_TOKEN https://api.github.com/repos/ignitionrobotics/ign-cmake/tags | grep -m1 name | cut -d'\"' -f4 | cut -d'_' -f2",
+        "ignition-common": "curl -sL AchmadFathoni:$GITHUB_TOKEN https://api.github.com/repos/ignitionrobotics/ign-common/tags | grep -m1 '\"name\": \"ignition-common' | cut -d'\"' -f4 | cut -d'_' -f2",
+        "ignition-math": "curl -sL AchmadFathoni:$GITHUB_TOKEN https://api.github.com/repos/ignitionrobotics/ign-math/tags | grep name | grep -v pre -m1 | cut -d'\"' -f4 | cut -d'_' -f2",
+        "onboard-sdk": "curl -sL AchmadFathoni:$GITHUB_TOKEN https://api.github.com/repos/dji-sdk/Onboard-SDK/releases/latest | grep tag_name | cut -d'\"' -f4",
+        "ros-noetic-mavlink": "curl -sL AchmadFathoni:$GITHUB_TOKEN https://api.github.com/repos/mavlink/mavlink-gbp-release/tags | grep -m1 name | cut -d'\"' -f4 | cut -d'/' -f2",
+        "ros-noetic-mavros": "curl -sL AchmadFathoni:$GITHUB_TOKEN https://api.github.com/repos/mavlink/mavros-release/tags | grep -m1 upstream/1 | cut -d'\"' -f4 | cut -d'/' -f2",
+        "ros-noetic-mavros-msgs": "curl -sL AchmadFathoni:$GITHUB_TOKEN https://api.github.com/repos/mavlink/mavros-release/tags | grep -m1 upstream/1 | cut -d'\"' -f4 | cut -d'/' -f2",
+        "ros-noetic-libmavconn": "curl -sL AchmadFathoni:$GITHUB_TOKEN https://api.github.com/repos/mavlink/mavros-release/tags | grep -m1 upstream/1 | cut -d'\"' -f4 | cut -d'/' -f2",
+        "ros-noetic-mavros-extras": "curl -sL AchmadFathoni:$GITHUB_TOKEN https://api.github.com/repos/mavlink/mavros-release/tags | grep -m1 upstream/1 | cut -d'\"' -f4 | cut -d'/' -f2",
+        "ros-noetic-nmea-msgs": "curl -sL AchmadFathoni:$GITHUB_TOKEN https://api.github.com/repos/ros-drivers/nmea_msgs/releases/latest | grep tag_name | cut -d'\"' -f4",
+        "rtklib": "curl -sL AchmadFathoni:$GITHUB_TOKEN https://api.github.com/repos/tomojitakasu/RTKLIB/releases/latest | grep tag_name | cut -d'\"' -f4 | tr -d 'v-'",
+        "python-gtsam": "curl -Ls https://pypi.org/pypi/gtsam/json | jq -r .info.version",
+        "python-libclang": "curl -Ls https://pypi.org/pypi/libclang/json | jq -r .info.version"
+    }
+}
