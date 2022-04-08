@@ -10,7 +10,14 @@ while read p; do
         version=$(awk '{ print $(NF-1) }' <<< $p)
 
         #Bump the PKGBUILD in yay's cache
-        cd ~/.cache/yay/"$name"
+        DIR="~/.cache/yay/"$name""
+        if [ -d "$DIR" ]; then
+            cd $DIR
+        else
+            cd ~/.cache/yay/
+            git clone https://aur.archlinux.org/$name.git
+            cd $name
+        fi
         sed -E "s#(pkgver=).*#\1$version#" -i PKGBUILD
         updpkgsums
         makepkg --printsrcinfo > .SRCINFO
