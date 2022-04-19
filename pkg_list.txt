@@ -8,6 +8,7 @@ python-aiohttp-sse-client
 python-ascii_magic
 python-beartyp
 python-bt
+python-ccxt
 python-convertdate
 python-detecta
 python-datetime
