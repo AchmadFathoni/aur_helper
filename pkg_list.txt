@@ -1,6 +1,4 @@
-ignition-cmake
-ignition-common
-ignition-math
+cloudcompare
 libdart
 mavproxy
 onboard-sdk
