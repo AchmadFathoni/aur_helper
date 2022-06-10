@@ -61,7 +61,6 @@ python-colcon-test-result
 python-colcon-zsh
 python-debian-parser
 python-mbedtls
-python-nspektr
 python-ros-cross-compile
 ros-noetic-imu-complementary-filter
 ros-noetic-rviz-imu-plugin
