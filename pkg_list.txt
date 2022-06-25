@@ -78,3 +78,4 @@ python-ouster-sdk
 python-pymap3d
 python-gtsam
 ros-noetic-libmavconn
+python-types-python-dateutil

@@ -20,6 +20,7 @@
         "python-gtsam": "curl -Ls https://pypi.org/pypi/gtsam/json | jq -r .info.version",
         "python-libclang": "curl -Ls https://pypi.org/pypi/libclang/json | jq -r .info.version",
         "python-colcon-core": "curl -Ls https://pypi.org/pypi/colcon-core/json | jq -r .info.version",
-        "python-freqtrade": "curl -Ls https://pypi.org/pypi/freqtrade/json | jq -r .info.version"
+        "python-freqtrade": "curl -Ls https://pypi.org/pypi/freqtrade/json | jq -r .info.version",
+        "python-pandas-stubs": "curl -Ls https://pypi.org/pypi/pandas-stubs/json | jq -r .info.version"
     }
 }
