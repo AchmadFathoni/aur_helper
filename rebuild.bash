@@ -1,5 +1,5 @@
 #!/bin/bash
 
 while read p; do
-    yay -S "$p" --rebuild --noconfirm
-done <<< $(checkrebuild | cut -f2 | grep -v 'zoom')
+    yay -S "$p" --rebuildall --noconfirm
+done <<< $(checkrebuild | cut -f2 | grep -E "zoom|miniconda3" -v)
