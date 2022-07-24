@@ -1,3 +1,4 @@
+evaltool-bin
 cloudcompare
 libdart
 mavproxy
@@ -79,3 +80,4 @@ python-pymap3d
 python-gtsam
 ros-noetic-libmavconn
 python-types-python-dateutil
+python-types-requests
