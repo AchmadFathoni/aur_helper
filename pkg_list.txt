@@ -81,3 +81,5 @@ python-gtsam
 ros-noetic-libmavconn
 python-types-python-dateutil
 python-types-requests
+python-time-machine
+python-pytest-random-order
