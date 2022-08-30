@@ -1,4 +1,4 @@
-1. install aur-out-of-date package
+1. install aur-out-of-date & jq package
 2. Soft-link config.json to ~/.config/aur-out-of-date/
 3. Fill pkg_list.txt with AUR package that you want to track
 4. Run `$bash ./fetch.bash`
