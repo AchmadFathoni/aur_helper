@@ -23,6 +23,7 @@
         "python-colcon-core": "curl -Ls https://pypi.org/pypi/colcon-core/json | jq -r .info.version",
         "python-freqtrade": "curl -Ls https://pypi.org/pypi/freqtrade/json | jq -r .info.version",
         "python-py-find-1st": "curl -Ls https://pypi.org/pypi/py-find-1st/json | jq -r .info.version",
-        "python-pandas-stubs": "curl -Ls https://pypi.org/pypi/pandas-stubs/json | jq -r .info.version"
+        "python-pandas-stubs": "curl -Ls https://pypi.org/pypi/pandas-stubs/json | jq -r .info.version",
+        "python-ouster-sdk": "curl -Ls https://pypi.org/pypi/ouster-sdk/json | jq -r .info.version"
     }
 }
