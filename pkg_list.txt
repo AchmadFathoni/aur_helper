@@ -18,7 +18,6 @@ python-finnhub-python
 python-finviz
 python-fred
 python-fredapi
-python-freqtrade
 python-fundamentalanalysis
 python-google-pasta
 python-hijri-converter
@@ -83,3 +82,4 @@ python-types-python-dateutil
 python-types-requests
 python-time-machine
 python-pytest-random-order
+python-voila
