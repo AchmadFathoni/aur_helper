@@ -24,6 +24,6 @@
         "python-freqtrade": "curl -Ls https://pypi.org/pypi/freqtrade/json | jq -r .info.version",
         "python-py-find-1st": "curl -Ls https://pypi.org/pypi/py-find-1st/json | jq -r .info.version",
         "python-pandas-stubs": "curl -Ls https://pypi.org/pypi/pandas-stubs/json | jq -r .info.version",
-        "python-ouster-sdk": "curl -Ls https://pypi.org/pypi/ouster-sdk/json | jq -r .info.version"
+        "python-ouster-sdk": "curl -sL AchmadFathoni:$GITHUB_TOKEN https://api.github.com/repos/ouster-lidar/ouster_example/releases/latest | grep -m1 -o -P '20\\d{6}'"
     }
 }
