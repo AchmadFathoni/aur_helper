@@ -1,6 +1,6 @@
 {
     "scripts": {
-        "evaltool-bin": "curl -sL AchmadFathoni:$GITHUB_TOKEN https://api.github.com/repos/inertialsense/inertial-sense-sdk/releases/latest | grep -m1 -o -P '(\\d+)\\.(\\d+)\\.(\\d+)\\.[a-z]'",
+        "evaltool-bin": "curl -sL AchmadFathoni:$GITHUB_TOKEN https://api.github.com/repos/inertialsense/inertial-sense-sdk/releases/latest | grep -oP '(?<=\"tag_name\": \")(\\d\\.){2}\\d[\\.]?[a-z]?'",
         "cloudcompare": "curl -sL AchmadFathoni:$GITHUB_TOKEN https://api.github.com/repos/CloudCompare/CloudCompare/tags | grep -m1 -o -P '(\\d+)\\.(\\d+)\\.(\\d+)(?=\")'",
         "ignition-cmake": "curl -sL AchmadFathoni:$GITHUB_TOKEN https://api.github.com/repos/ignitionrobotics/ign-cmake/tags | grep -m1 -o -P '(\\d+)\\.(\\d+)\\.(\\d+)(?=\")'",
         "ignition-common": "curl -sL AchmadFathoni:$GITHUB_TOKEN https://api.github.com/repos/ignitionrobotics/ign-common/tags | grep -m1 '\"name\": \"ignition-common' | cut -d'\"' -f4 | cut -d'_' -f2",
@@ -24,6 +24,7 @@
         "python-freqtrade": "curl -Ls https://pypi.org/pypi/freqtrade/json | jq -r .info.version",
         "python-py-find-1st": "curl -Ls https://pypi.org/pypi/py-find-1st/json | jq -r .info.version",
         "python-pandas-stubs": "curl -Ls https://pypi.org/pypi/pandas-stubs/json | jq -r .info.version",
+        "python-holidays": "curl -Ls https://pypi.org/pypi/holidays/json | jq -r .info.version",
         "python-ouster-sdk": "curl -sL AchmadFathoni:$GITHUB_TOKEN https://api.github.com/repos/ouster-lidar/ouster_example/releases/latest | grep 'html_url' | grep -o -P '\\d+'",
         "xgboost": "curl -sL AchmadFathoni:$GITHUB_TOKEN https://api.github.com/repos/dmlc/xgboost/tags | grep -m1 -o -P '(\\d+)\\.(\\d+)\\.(\\d+)(?=\")'"
     }
