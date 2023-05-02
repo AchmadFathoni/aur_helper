@@ -83,3 +83,4 @@ python-types-requests
 python-time-machine
 python-pytest-random-order
 python-voila
+python-trio-websocket
