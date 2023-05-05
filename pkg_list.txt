@@ -84,3 +84,4 @@ python-time-machine
 python-pytest-random-order
 python-voila
 python-pyportfolioopt
+python-trio-websocket
