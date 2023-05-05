@@ -5,7 +5,7 @@ mavproxy
 onboard-sdk
 python-aiohttp-sse-client
 python-ascii_magic
-python-beartyp
+python-beartype
 python-bt
 python-ccxt
 python-convertdate
@@ -83,3 +83,4 @@ python-types-requests
 python-time-machine
 python-pytest-random-order
 python-voila
+python-pyportfolioopt
