@@ -26,6 +26,7 @@
         "python-pandas-stubs": "curl -Ls https://pypi.org/pypi/pandas-stubs/json | jq -r .info.version",
         "python-holidays": "curl -Ls https://pypi.org/pypi/holidays/json | jq -r .info.version",
         "python-ouster-sdk": "curl -sL AchmadFathoni:$GITHUB_TOKEN https://api.github.com/repos/ouster-lidar/ouster_example/releases/latest | grep 'html_url' | grep -o -P '\\d+'",
+        "geoserver-bin": "curl -sL AchmadFathoni:$GITHUB_TOKEN https://api.github.com/repos/geoserver/geoserver/releases/latest | grep 'html_url' | grep -o -P '(\\d+\\.){2}\\d+'",
         "xgboost": "curl -sL AchmadFathoni:$GITHUB_TOKEN https://api.github.com/repos/dmlc/xgboost/tags | grep -m1 -o -P '(\\d+)\\.(\\d+)\\.(\\d+)(?=\")'"
     }
 }

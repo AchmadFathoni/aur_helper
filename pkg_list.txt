@@ -1,3 +1,4 @@
+geoserver-bin
 evaltool-bin
 cloudcompare
 libdart
