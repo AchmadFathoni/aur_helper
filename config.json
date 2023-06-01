@@ -1,6 +1,6 @@
 {
     "scripts": {
-        "evaltool-bin": "curl -sL AchmadFathoni:$GITHUB_TOKEN https://api.github.com/repos/inertialsense/inertial-sense-sdk/releases/latest | grep -oP '(?<=\"tag_name\": \")(\\d\\.){2}\\d[\\.]?[a-z]?'",
+        "evaltool-bin": "curl -sL AchmadFathoni:$GITHUB_TOKEN https://api.github.com/repos/inertialsense/inertial-sense-sdk/releases/latest | grep -oP '(?<=\"tag_name\": \")(\\d+?\\.){2}\\d[\\.]?[a-z]?'",
         "cloudcompare": "curl -sL AchmadFathoni:$GITHUB_TOKEN https://api.github.com/repos/CloudCompare/CloudCompare/tags | grep -m1 -o -P '(\\d+)\\.(\\d+)\\.(\\d+)(?=\")'",
         "ignition-cmake": "curl -sL AchmadFathoni:$GITHUB_TOKEN https://api.github.com/repos/ignitionrobotics/ign-cmake/tags | grep -m1 -o -P '(\\d+)\\.(\\d+)\\.(\\d+)(?=\")'",
         "ignition-common": "curl -sL AchmadFathoni:$GITHUB_TOKEN https://api.github.com/repos/ignitionrobotics/ign-common/tags | grep -m1 '\"name\": \"ignition-common' | cut -d'\"' -f4 | cut -d'_' -f2",
